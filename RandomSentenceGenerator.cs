@@ -19,7 +19,10 @@ namespace RandomSentenceGenerator
 
 
             Console.WriteLine("Hello, this is your firs random-generated sentance:");
-            while (true)
+
+            ConsoleKeyInfo keyInfo = new ConsoleKeyInfo((char)ConsoleKey.Enter, ConsoleKey.Enter, false, false, false); ;
+
+            while (keyInfo.Key == ConsoleKey.Enter)
             {
                 Random random = new Random();
                 int randomNum = random.Next(1, 10);
@@ -54,7 +57,9 @@ namespace RandomSentenceGenerator
 
                 Console.WriteLine("Click [Enter] to genrate new one.");
                 Console.WriteLine();
-                Console.ReadKey();
+
+
+                keyInfo = Console.ReadKey();
             }
         }
 

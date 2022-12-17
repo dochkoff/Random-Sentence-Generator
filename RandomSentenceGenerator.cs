@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Random_Sentence_Generator
+namespace RandomSentenceGenerator
 {
     class Program
     {

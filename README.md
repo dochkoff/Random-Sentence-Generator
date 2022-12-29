@@ -15,7 +15,7 @@ The computer generate random sentance and after pressing `Enter` will be generat
 ## Solution
 The **Generator** is based on the following model:
 
-- [Declarative Sentence] = `Who` + `Action` + `Details`
+- [Declarative Sentence] = `Who` + `Action` + `Details` .
 
   - **Who** = `Name` form `Place`
 
@@ -30,12 +30,14 @@ The **Generator** is based on the following model:
 
   - **Details** = { near the river, at home, in the park }
 
-- [Interrogative Sentence] = `Question` + `Name` + `Action` + `Detail`
+- [Interrogative Sentence] = `Question` + `Name` + `Action` + `Details` ?
 
   - **Question** = `Question Word` + `Helping Verb`
 
     - Question Word = { Who, What, Where, ... }
     - Helping Verb = { does, has }
+
+  - **Name** = { Peter, Michell, Jane, Steve, ... }
 
   - **Action** = + `Verb` + `Adverbs`
 

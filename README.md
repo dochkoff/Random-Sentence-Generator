@@ -15,17 +15,31 @@ The computer generate random sentance and after pressing `Enter` will be generat
 ## Solution
 The **Generator** is based on the following model:
 
-- [Sentence] = `Who` + `Action` + `Details`
+- [Declarative Sentence] = `Who` + `Action` + `Details`
 
-  - **Who** = `Name`|`Name` form `Place`
+  - **Who** = `Name` form `Place`
 
     - Nemes = { Peter, Michell, Jane, Steve, ... }
     - Places = { Sofia, Plovdiv, Varna, Burgas, ... }
 
-  - **Action** = `Verb` + `Noun`|`Adverbs` + `Verb` + `Noun`
+  - **Action** = `Adverbs` + `Verb` + `Noun`
 
     - Verbs = { eats, holds, sees, plays with, brings, ... }
     - Nouns = { stones, cake, apple, laptop, bikes, ... }
+    - Adverbs = { slowly, diligently, warmly, sadly, rapidly, ... }
+
+  - **Details** = { near the river, at home, in the park }
+
+- [Interrogative Sentence] = `Question` + `Name` + `Action` + `Detail`
+
+  - **Question** = `Question Word` + `Helping Verb`
+
+    - Question Word = { Who, What, Where, ... }
+    - Helping Verb = { does, has }
+
+  - **Action** = + `Verb` + `Adverbs`
+
+    - Verbs = { eats, holds, sees, plays with, brings, ... }
     - Adverbs = { slowly, diligently, warmly, sadly, rapidly, ... }
 
   - **Details** = { near the river, at home, in the park }

@@ -28,7 +28,7 @@ namespace RandomSentenceGenerator
                 int randomNum = random.Next(1, 10);
 
                 string randomName = GetRandomWord(names);
-                string randomAdvedb = GetRandomWord(adverbs);
+                string randomAdverb = GetRandomWord(adverbs);
                 string randomDetail = GetRandomWord(detaills);
 
                 if (randomNum % 2 == 0)
@@ -38,7 +38,7 @@ namespace RandomSentenceGenerator
                     string randomNoun = GetRandomWord(nouns);
 
                     string who = $"{randomName} from {randomPlaece}";
-                    string action = $"{randomAdvedb} {randomVerb} {randomNoun}";
+                    string action = $"{randomAdverb} {randomVerb} {randomNoun}";
 
                     string declarativeSentence = $"{who} {action} {randomDetail}.";
 
@@ -50,7 +50,7 @@ namespace RandomSentenceGenerator
                     string randomHelpingVerb = GetRandomWord(helpingVerbs);
                     string randomQuestionVerb = GetRandomWord(questionVerbs);
 
-                    string interrogativeSentence = $"{randomQuestionWord} {randomHelpingVerb} {randomName} {randomQuestionVerb} {randomAdvedb} {randomDetail}?";
+                    string interrogativeSentence = $"{randomQuestionWord} {randomHelpingVerb} {randomName} {randomQuestionVerb} {randomAdverb} {randomDetail}?";
 
                     Console.WriteLine(interrogativeSentence);
                 }
